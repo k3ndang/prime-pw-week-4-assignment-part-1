@@ -123,15 +123,16 @@ console.log(sumAll([1, 2 ,3, 4, 5, 6, 7]));
 function numbers(arr) {
   let positiveNum = [];
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] >= 0) {
-      return positiveNum = arr[i];
+    if (arr[i] > 0) {
+      positiveNum.push(arr[i]);
     }
   }
     return positiveNum;
 }
 
 
-console.log(numbers([-1, 3, -3, 4]));
+console.log(numbers([-1, 3, -3, 4, -6]));
+console.log(numbers([-1, -2, -3]));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
