@@ -87,8 +87,8 @@ function find( value, array ) {
       return false;
 }
 
-console.log(find(4, [2, 3, 4]));
-
+console.log('item in grocery list:', find('veggies', ['steak', 'chicken', 'veggies']));
+console.log('item not in grocery list:', find('eggs', ['steak', 'chicken', 'veggies']));
 
 
 // ----------------------
@@ -137,3 +137,20 @@ console.log(numbers([-1, -2, -3]));
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
+
+// problem from CodeWars
+// Return the number (count) of vowels in the given string.
+// We will consider a, e, i, o, u as vowels for this Kata (but not y).
+// The input string will only consist of lower case letters and/or spaces.
+function getCount(str) {
+  var vowelsCount = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u') {
+      vowelsCount++;
+    }
+  }
+    return vowelsCount;
+  // enter your majic here
+}
+
+console.log(getCount('this website is awesome'));
