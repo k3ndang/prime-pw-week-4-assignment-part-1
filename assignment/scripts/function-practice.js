@@ -71,7 +71,7 @@ function getLast( array ) {
 }
 
 getLast([]);
-console.log(getLast([1,2,3,4,5,]));
+getLast([1, 2, 3, 4, 5]);
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
@@ -131,8 +131,8 @@ function numbers(arr) {
 }
 
 
-console.log(numbers([-1, 3, -3, 4, -6]));
-console.log(numbers([-1, -2, -3]));
+console.log(`expect to show (3, 4): ${numbers([-1, 3, -3, 4, -6])}`);
+console.log(`expect to be empty: ${numbers([-1, -2, -3])}`);
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
