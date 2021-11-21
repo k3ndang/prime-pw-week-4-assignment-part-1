@@ -78,7 +78,7 @@ getLast([1, 2, 3, 4, 5]);
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 
 
-function find( value, array ) {
+function groceryList( value, array ) {
   for (let i = 0; i < array.length; i++) {
     if (value === array[i]) {
       return true;
@@ -87,8 +87,8 @@ function find( value, array ) {
       return false;
 }
 
-console.log('item in grocery list:', find('veggies', ['steak', 'chicken', 'veggies']));
-console.log('item not in grocery list:', find('eggs', ['steak', 'chicken', 'veggies']));
+console.log('item in grocery list:', groceryList('veggies', ['steak', 'chicken', 'veggies']));
+console.log('item not in grocery list:', groceryList('eggs', ['steak', 'chicken', 'veggies']));
 
 
 // ----------------------
