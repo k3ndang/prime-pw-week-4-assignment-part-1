@@ -15,30 +15,28 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
-    console.log('Hello,' + name + '!');
+  return (`Hello, ${name}!`);
 }
-
-helloName('Ken');
+// I keep thinking about console.log that's why I had in there before
+console.log(helloName('Ken'));
 
 // Remember to call the function to test
 
 
 // 3. Function to add two numbers together & return the result
 function addNumbers( firstNumber, secondNumber ) {
-  // return firstNumber + secondNumber;
-  console.log(firstNumber + secondNumber);
-  return addNumbers = firstNumber + secondNumber;
+  // I didn't know you can just call the two numbers without console.log until the Tuesday we met in person
+  return firstNumber + secondNumber;
 }
 
-addNumbers(12345, 67890);
+console.log(addNumbers(12345, 67890));
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree(n1, n2, n3 ){
-  console.log(n1 * n2 * n3);
-  return multiplyThree = n1 * n2 * n3;
+  return n1 * n2 * n3;
 }
 
-multiplyThree(45, 5, 11);
+console.log(multiplyThree(45, 5, 11));
 
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
@@ -64,15 +62,14 @@ console.log( ' if isPositive less than 0 then it should be fasle:', isPositive(-
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
 function getLast( array ) {
-    console.log(array[array.length - 1]);
-    if (array.length === 0) {
-      return 'undefined';
+  if (array.length === 0) {
+    return undefined;
   }
+    return array[array.length - 1];
 }
 
-getLast([]);
-getLast([1, 2, 3, 4, 5]);
-
+console.log(getLast([]));
+console.log((getLast([1, 2, 3, 4, 5])));
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
